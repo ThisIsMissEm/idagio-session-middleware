@@ -34,3 +34,5 @@ Session.middleware = function SessionMiddleware(request, response, next) {
   request.session = new Session(request.cookies);
   next();
 };
+
+module.exports = Session;
