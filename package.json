@@ -1,6 +1,6 @@
 {
   "name": "@idagio/session-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Middleware for creating and managing sessions. Builds on top of @idagio/cookie-middleware.",
   "main": "index.js",
   "scripts": {
