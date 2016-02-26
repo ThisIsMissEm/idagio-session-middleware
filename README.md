@@ -48,7 +48,7 @@ function SessionMiddleware(request, response, next) {
 // app.use(SessionMiddleware);
 ```
 
-#### Important details around security
+### Important details around security
 
 You will often use the `request.session.token` value to store some information in a database or in memory, such that you can use the session token to retrieve that information at a later point in time. In order to prevent [Session Fixation](https://www.owasp.org/index.php/Session_fixation), you should **ALWAYS** do a `request.session.reset()` before changing the value of the session.
 
@@ -62,7 +62,7 @@ You should probably also expire sessions in your storage after a given number of
 
 ## API
 
-### new Session(cookies, [ name ])
+### `new Session(cookies, [ name ])`
 
 Creates a new instance of the Session handler; `cookies` is expected to be something that conforms to the API which [`@idagio/cookie-middleware`](https://github.com/idagio/idagio-cookie-middleware) exposes. Optionally, you can specify a name for the cookie that the session will be stored in, this defaults to `'_session'`.
 
